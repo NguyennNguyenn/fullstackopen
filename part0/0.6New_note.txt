@@ -1,0 +1,14 @@
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over browser:
+browser sends the new note as JSON-data 
+containing both the content of the note and the timestamp
+end note
+
+server->browser: status code 201
+
+note over server:
+the server does not ask for a redirect, 
+the browser stays on the same page, 
+and sends no further HTTP requests.
+end note
